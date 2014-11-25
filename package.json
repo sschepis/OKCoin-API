@@ -18,15 +18,17 @@
     "url": "https://github.com/etiennetatur/OKCoin-API"
   },
   "main": "okcoin.js",
-  "author": "Etienne TATUR (https://github.com/etiennetatur)",
-  "contributors": [
-  ],
+  "author": {
+    "name": "Etienne TATUR",
+    "url": "https://github.com/etiennetatur"
+  },
+  "contributors": [],
   "license": "MIT",
   "dependencies": {
     "MD5": "^1.2.1",
     "request": "^2.27.0"
   },
-   "devDependencies": {
+  "devDependencies": {
     "mocha": "*",
     "sinon": "*",
     "should": "*"
@@ -38,5 +40,25 @@
     "url": "https://github.com/etiennetatur/OKCoin-API/issues",
     "email": "etienne.tatur@gmail.com"
   },
-  "readmeFilename": "README.md"
+  "homepage": "https://github.com/etiennetatur/OKCoin-API",
+  "_id": "okcoin-api@0.1.7",
+  "_shasum": "732a5e67f4e8138924eaf231ef98ba97bccdef71",
+  "_from": "okcoin-api@*",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "etienne.tatur",
+    "email": "etienne.tatur@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "etienne.tatur",
+      "email": "etienne.tatur@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "732a5e67f4e8138924eaf231ef98ba97bccdef71",
+    "tarball": "http://registry.npmjs.org/okcoin-api/-/okcoin-api-0.1.7.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/okcoin-api/-/okcoin-api-0.1.7.tgz"
 }
