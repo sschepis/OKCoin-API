@@ -50,6 +50,63 @@ describe('okcoin.userinfo', function () {
   });
 });
 
+describe('okcoin.futuresticker', function () {
+  it('should return ticker info', function (done) {
+    okcoin.futures_ticker(function (err, data) {
+      if (err) return done(err);
+      data.should.have.property('ticker');
+      done();
+    });
+  });
+});
+describe('okcoin.futuresdepth', function () {
+  it('should return futures depth', function (done) {
+    okcoin.futures_depth(function (err, data) {
+      if (err) return done(err);
+      data.should.have.property('asks');
+      data.should.have.property('bids');
+      done();
+    });
+  });
+});
+describe('okcoin.futurestrades', function () {
+  it('should return futures trades', function (done) {
+    okcoin.futures_trades(function (err, data) {
+      if (err) return done(err);
+      data[0].should.have.property('price');
+      done();
+    });
+  });
+});
+describe('okcoin.futuresuserinfo', function () {
+  it('should return futures user info', function (done) {
+    okcoin.futures_userinfo(function (err, data) {
+      if (err) return done(err);
+      data.should.have.property('info');
+      done();
+    });
+  });
+});
+describe('okcoin.futuresorderinfo', function () {
+  it('should return futures order info', function (done) {
+    okcoin.futures_orderinfo(function (err, data) {
+      if (err) return done(err);
+      data.should.have.property('orders');
+      done();
+    });
+  });
+});
+describe('okcoin.futuresposition', function () {
+  it('should return position info', function (done) {
+    okcoin.futures_position(function (err, data) {
+      if (err) return done(err);
+      data.should.have.property('holding');
+      done();
+    });
+  });
+});
+
+
 /*
  *
  *      WARNING : THESE TESTS WILL SELL OR BUY REAL BTC, 
